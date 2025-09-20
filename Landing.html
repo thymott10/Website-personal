@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="Css/Landing.css">
+</head>
+<body>
+    <!-- Navbar -->
+  
+   <header>
+    <nav>
+      <h1 class="logo"><span>L</span>F</h1>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Solusi Digital <span>Modern</span> untuk Bisnis Anda</h1>
+      <p>Kami membantu Anda mengembangkan bisnis dengan teknologi terkini dan desain elegan.</p>
+      <a href="#services" class="btn">Jelajahi Layanan</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Tentang Kami</h2>
+      <p>Kami adalah tim profesional yang fokus pada pengembangan solusi digital yang modern, elegan, dan mudah digunakan. Visi kami adalah membantu bisnis Anda tumbuh lebih cepat melalui teknologi.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Layanan Kami</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <p>Membangun website yang responsif, cepat, dan elegan untuk bisnis Anda.</p>
+        </div>
+        <div class="service-card">
+          <h3>UI/UX Design</h3>
+          <p>Desain modern dan user-friendly agar pengalaman pengguna lebih baik.</p>
+        </div>
+        <div class="service-card">
+          <h3>Digital Marketing</h3>
+          <p>Meningkatkan jangkauan bisnis Anda dengan strategi digital yang efektif.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontak Kami</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nama Anda" required>
+        <input type="email" placeholder="Email Anda" required>
+        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 BrandLogo. Semua Hak Dilindungi.</p>
+  </footer>
+  
+  <!-- Script Animasi Scroll -->
+  <script>
+    const elements = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
