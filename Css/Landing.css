@@ -1,0 +1,167 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #222;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #4e54c8;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+nav span {
+  color: #ffdb70;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffdb70;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.hero h1 span {
+  color: #ffdb70;
+}
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #ffdb70;
+  color: #333;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #ffc107;
+}
+
+/* About */
+.about, .services, .contact {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.about .container, 
+.services .container,
+.contact .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4e54c8;
+}
+
+/* Services */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.contact-form button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #4e54c8;
+  color: #fff;
+}
+
+/* Animasi Fade-In + Slide-Up */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
